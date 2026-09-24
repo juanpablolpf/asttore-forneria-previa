@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Asttore Forneria | Varjota, Fortaleza</title>
+<meta name="description" content="Asttore Forneria: cozinha italiana com massa artesanal, risotos e pizzas estilo napolitano. Rua 8 de Setembro, 149, Varjota, Fortaleza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --ground: #1C1C1F; --ground-2: #26262A; --ink: #F3F0E8; --muted: #B3AEA3; --line: #37363A;
+    --limone: #F2D35B; --limone-ink: #1C1A0C; --basil: #7FB069;
+    --display: "Italiana", "Didot", "Georgia", serif; --body: "Outfit", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { background: var(--ground); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; }
+  a { color: inherit; } img { max-width: 100%; display: block; }
+  :focus-visible { outline: 2px solid var(--limone); outline-offset: 3px; }
+  h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.05; text-wrap: balance; }
+  .wrap { max-width: 1160px; margin-inline: auto; padding-inline: 24px; }
+  .preview-bar { background: var(--limone); color: var(--limone-ink); text-align: center; font-size: .88rem; padding: 8px 16px; line-height: 1.4; }
+  .top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--ground) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+  .logo { font-family: var(--display); font-size: 1.8rem; letter-spacing: .06em; text-decoration: none; }
+  .top nav { display: flex; align-items: center; gap: 24px; }
+  .top nav a { text-decoration: none; color: var(--muted); font-size: .98rem; }
+  .top nav a:hover { color: var(--ink); }
+  .btn { display: inline-block; text-decoration: none; font-weight: 600; font-size: 1rem; padding: 12px 24px; border-radius: 999px; background: var(--limone); color: var(--limone-ink); border: 1px solid var(--limone); }
+  .btn:hover { filter: brightness(1.05); }
+  .btn-line { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn-line:hover { border-color: var(--limone); filter: none; }
+  .top nav .btn { color: var(--limone-ink); padding: 8px 18px; font-size: .95rem; }
+  .menu-toggle { display: none; background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 7px 16px; font: inherit; font-size: .95rem; cursor: pointer; }
+  @media (max-width: 760px) {
+    .menu-toggle { display: inline-block; }
+    .top nav { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: var(--ground); border-bottom: 1px solid var(--line); padding: 8px 24px 20px; }
+    .top nav a { padding-block: 12px; border-bottom: 1px solid var(--line); font-size: 1.05rem; }
+    .top nav .btn { margin-top: 16px; text-align: center; border-bottom: 1px solid var(--limone); padding: 12px; }
+  }
+  .hero { display: grid; grid-template-columns: 1fr; gap: 40px; padding-block: 56px 80px; }
+  @media (min-width: 940px) { .hero { grid-template-columns: 6fr 5fr; align-items: center; padding-block: 84px 108px; } }
+  .kicker { color: var(--basil); font-weight: 500; margin-bottom: 16px; }
+  .hero h1 { font-size: clamp(3rem, 7.4vw, 5.8rem); margin-bottom: 22px; }
+  .hero .lede { color: var(--muted); font-size: 1.15rem; max-width: 30em; margin-bottom: 28px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero-img img { width: 100%; height: auto; aspect-ratio: 361 / 461; object-fit: cover; border-radius: 200px 200px 16px 16px; }
+  section.block { padding-block: 84px; border-top: 1px solid var(--line); }
+  .block h2.title { font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 14px; }
+  .block .intro { color: var(--muted); max-width: 38em; margin-bottom: 36px; }
+  .journey { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 820px) { .journey { grid-template-columns: repeat(4, 1fr); } }
+  .journey figure { background: var(--ground-2); border-radius: 18px; overflow: hidden; }
+  .journey img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+  .journey figcaption { padding: 16px 18px 20px; }
+  .journey strong { font-family: var(--display); font-weight: 400; font-size: 1.5rem; display: block; margin-bottom: 4px; }
+  .journey span { color: var(--muted); font-size: .98rem; }
+  .credit { margin-top: 14px; font-size: .85rem; color: var(--muted); }
+  .exec { display: grid; grid-template-columns: 1fr; gap: 28px; background: var(--ground-2); border-radius: 22px; padding: 32px; }
+  @media (min-width: 860px) { .exec { grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: center; } }
+  .exec h3 { font-size: 2.4rem; margin-bottom: 6px; }
+  .exec .when { color: var(--limone); margin-bottom: 12px; }
+  .exec p { color: var(--muted); }
+  .exec ul { list-style: none; display: grid; gap: 10px; }
+  .exec li { border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .exec li strong { font-weight: 600; display: block; }
+  .exec li span { color: var(--muted); font-size: .95rem; }
+  .perks { list-style: none; display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 820px) { .perks { grid-template-columns: repeat(3, 1fr); } }
+  .perks li { border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+  .perks h3 { font-size: 1.8rem; margin-bottom: 6px; color: var(--limone); }
+  .perks p { color: var(--muted); }
+  .perks a { color: var(--limone); text-underline-offset: 4px; }
+  .visit { display: grid; grid-template-columns: 1fr; gap: 40px; }
+  @media (min-width: 900px) { .visit { grid-template-columns: 1fr 1fr; gap: 64px; } }
+  .address { font-family: var(--display); font-size: clamp(1.9rem, 3.6vw, 2.6rem); line-height: 1.15; margin-bottom: 14px; }
+  .phone { color: var(--muted); margin-bottom: 22px; }
+  .card { background: var(--ground-2); border-radius: 18px; padding: 26px; }
+  .card h3 { font-size: 2rem; color: var(--limone); margin-bottom: 10px; }
+  .card dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 20px; }
+  .card dt { color: var(--muted); } .card dd { font-weight: 600; }
+  .map { margin-top: 44px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+  .map iframe { display: block; width: 100%; height: clamp(280px, 45vw, 420px); border: 0; filter: grayscale(.35); }
+  footer { border-top: 1px solid var(--line); padding-block: 28px 40px; color: var(--muted); font-size: .92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  @media (max-width: 480px) { .wrap { padding-inline: 16px; } .exec { padding: 22px; } .actions .btn { flex: 1 1 auto; text-align: center; } }
+</style>
+</head>
+<body>
+  <div class="preview-bar">Proposta de site para a Asttore Forneria, criada por Juan Filho. Aguardando aprovação.</div>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#inicio">Asttore</a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" aria-label="Seções">
+        <a href="#cozinha">Cozinha</a>
+        <a href="#executivo">Executivo</a>
+        <a href="#visite">Visite</a>
+        <a class="btn" href="https://dguests.com/reserva_mesa/asttoreforneria" target="_blank" rel="noopener">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <div class="wrap hero">
+      <div>
+        <p class="kicker">Forneria italiana na Varjota</p>
+        <h1>Cada mordida, uma festa italiana.</h1>
+        <p class="lede">Dos antipasti às massas artesanais, risotos, peixes, carnes e frutos do mar, até as pizzas no estilo napolitano, num ambiente sofisticado e descolado.</p>
+        <div class="actions">
+          <a class="btn" href="https://dguests.com/reserva_mesa/asttoreforneria" target="_blank" rel="noopener">Reservar uma mesa</a>
+          <a class="btn btn-line" href="https://livemenu.app/menu/68bed670183fe8699f10ac27" target="_blank" rel="noopener">Ver o cardápio</a>
+        </div>
+      </div>
+      <div class="hero-img"><img src="fotos/salao.jpg" alt="Salão da Asttore com mesas, luzes quentes e plantas" width="361" height="461"></div>
+    </div>
+
+    <section id="cozinha" class="block">
+      <div class="wrap">
+        <h2 class="title">Da massa ao forno</h2>
+        <p class="intro">A cozinha italiana da casa, do que se faz à mão ao que sai do forno.</p>
+        <div class="journey">
+          <figure><img src="fotos/massa-fresca.jpg" alt="Massa fresca cortada em tiras" width="480" height="640" loading="lazy"><figcaption><strong>Massa artesanal</strong><span>Feita na casa.</span></figcaption></figure>
+          <figure><img src="fotos/risoto.jpg" alt="Risoto amarelo com camarões" width="480" height="640" loading="lazy"><figcaption><strong>Risotos</strong><span>Cremosos, com frutos do mar ou carnes.</span></figcaption></figure>
+          <figure><img src="fotos/pizza-forno.jpg" alt="Pizza assando no forno" width="360" height="640" loading="lazy"><figcaption><strong>Forno</strong><span>Pizzas no estilo napolitano.</span></figcaption></figure>
+          <figure><img src="fotos/pizza.jpg" alt="Pizza servida na mesa sendo fatiada" width="360" height="640" loading="lazy"><figcaption><strong>À mesa</strong><span>Para dividir com quem está junto.</span></figcaption></figure>
+        </div>
+        <p class="credit">Fotos: <a href="https://www.instagram.com/asttoreforneria/" target="_blank" rel="noopener">@asttoreforneria</a></p>
+      </div>
+    </section>
+
+    <section id="executivo" class="block">
+      <div class="wrap">
+        <div class="exec">
+          <div>
+            <h3>Menu executivo</h3>
+            <p class="when">Terça a sexta, das 12h às 15h, exceto feriados.</p>
+            <p>Entrada, prato e sobremesa ou café.</p>
+          </div>
+          <ul>
+            <li><strong>Lasanha com camarões</strong><span>Massa fresca com camarões ao molho bisque e alho-poró.</span></li>
+            <li><strong>Cupim ao forno</strong><span>Marinado e assado, com risoto de limão-siciliano.</span></li>
+            <li><strong>Camarão com risoto e maçã</strong><span>Camarões flambados na vodka e noisette de maçã.</span></li>
+            <li><strong>Semifreddo al limone</strong><span>Sobremesa gelada de limão com crocante de castanha.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <ul class="perks">
+          <li><h3>Rolha free</h3><p>Traga o seu vinho. Confirme as condições com a casa.</p></li>
+          <li><h3>Grupos</h3><p>Reservas para grupos pelo <a href="https://wa.me/5585992270477" target="_blank" rel="noopener">WhatsApp</a>.</p></li>
+          <li><h3>Eventos</h3><p>Ambientes para celebrar. <a href="https://wa.me/5585991852191" target="_blank" rel="noopener">Fale com a equipe</a>.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="visite" class="block">
+      <div class="wrap visit">
+        <div>
+          <h2 class="title">Visite</h2>
+          <p class="address">Rua 8 de Setembro, 149<br>Varjota, Fortaleza</p>
+          <p class="phone">Reservas online ou, para grupos, pelo WhatsApp (85) 99227-0477.</p>
+          <div class="actions">
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Asttore+Forneria%2C+Rua+8+de+Setembro%2C+149%2C+Varjota%2C+Fortaleza+-+CE" target="_blank" rel="noopener">Como chegar</a>
+            <a class="btn btn-line" href="https://app.cardapioweb.com/asttore_forneria?s=cb" target="_blank" rel="noopener">Delivery</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Quando abrimos</h3>
+          <dl><dt>Almoço</dt><dd>Terça a domingo</dd><dt>Jantar</dt><dd>Todos os dias</dd></dl>
+        </div>
+      </div>
+      <div class="wrap"><div class="map"><iframe title="Mapa com a localização da Asttore Forneria" src="https://www.google.com/maps?q=Asttore+Forneria,+Rua+8+de+Setembro,+149,+Varjota,+Fortaleza+-+CE&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>Asttore Forneria</span><span>Rua 8 de Setembro, 149, Varjota, Fortaleza</span></div></footer>
+  <script src="site.js"></script>
+</body>
+</html>
